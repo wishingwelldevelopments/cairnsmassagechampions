@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="services.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Our Story</title>
+	</head>
+	<body>
+		<div class="navigation">
+			<div class="nav-top">
+				<div class="nav-container">
+					<div class="nav-container-item" id="sicns">
+						<i class="fa fa-phone" aria-hidden="true" style="font-size:12px;position:relative;top:2px;"></i><p>0428 044 979</p>		
+						<i class="fa fa-envelope" aria-hidden="true" style="font-size:12px;position:relative;top:2px;"></i><p>info@cairnsmassagechampions.com</p>		
+					</div>
+					<div class="nav-container-item" id="osin" style="justify-content:flex-end;">
+						<a href="https://www.facebook.com/pg/cairnsmassagechampions"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>	
+						<a href="https://www.instagram.com/cairnsmassagechampions"><i class="fa fa-instagram" aria-hidden="true"></i></a>	
+						<a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a>	
+					</div>
+				</div>
+			</div>
+			<div class="nav-bottom">
+				<div class="nav-container">
+					<div class="nav-container-item">
+						<img src="logo.jpg" width="45px" height="33.7px" alt=""/>
+						<div class="namecontainer">
+							<h1>Cairns Massage Champions</h1>
+							<p id="slogan">Treating Stress, Pain and Injury</p>
+						</div>
+					</div>
+					<div class="nav-container-item" style="justify-content:flex-end;">
+						<div class="hide-container">
+							<a href="index.html">Home</a>
+							<a href="services.html">Services</a>
+							<a href="story.html" id="nav-active">Our Story</a>
+							<a href="https://my.powerdiary.com/clientportal/cairnsmassagechampions">Book Online</a>
+							<a href="https://www.facebook.com/pg/cairnsmassagechampions/offers/">Specials</a>
+							<a href="contact.html">Contact Us</a>
+						</div>
+						<a href="#" id="hamenu"><i class="fa fa-bars" style="font-size:15px;" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-section" style="background-image:url('pim.jpg');height:350px;">
+			<div class="hero-container">
+				<h1>Our Story</h1>
+			</div>
+		</div>
+		<div class="content-window">
+			<p>Pimmy Hall grew up in Chaiyaphum, Thailand and worked as a Sales and Marketing Manager for a four star hotel in Bangkok. In 2016 she relocated to Cairns with her husband and their daughter. Fascinated with the changes her body went through during and after the birth of her baby in 2015, Pimmy developed a keen interest in anatomy and physiology.</p>	
+			<p>Pimmy loves receiving massage treatments and believes it helps with stress relief and body maintenance. In 2017 she headed back to Thailand to study for a certificate in Thai Massage. In 2018, she enrolled at the Aminya Natural Therapy Campus in Cairns where she completed her Massage Therapy certificate VI and her Diploma in Remedial massage.</p>
+			<p>During her studies, Pimmy worked with various massage shops in Cairns. After qualifying as a remedial massage therapist, she worked at a Physio therapy clinic. Pimmy’s areas of clinical interest include sporting injuries and chronic pain. She works closely with other professional practioners such as Physio therapists, Chiropractors and Naturopaths should her patients need referrals. Pimmy enjoys swimming, Zumba dancing and practicing her massage treatments. Having worked now in various business around the town, Pimmy is excited to open her new Remedial massage clinic called Cairns Massage Champions.</p>
+		</div>
+		<div class="overlay">
+			<a href="index.html">Home</a>
+			<a href="services.html">Services</a>
+			<a href="story.html">Our Story</a>
+			<a href="https://my.powerdiary.com/clientportal/cairnsmassagechampions">Book Online</a>
+			<a href="https://www.facebook.com/pg/cairnsmassagechampions/offers/">Specials</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+	</body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script charset="utf-8">
+			$(document).ready(function() {
+					$('.overlay').hide();
+				$('.service').click(function(){
+					var link = $(this).children('a').attr('href');
+					window.location.href = link;
+				});	
+				$('#hamenu').click(function(e){
+					e.preventDefault();
+					$('.overlay').slideToggle();
+					$(this).children('i').toggleClass('fa-bars fa-times');
+				});
+			});
+		</script>
+</html>
