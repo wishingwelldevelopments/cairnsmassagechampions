@@ -209,7 +209,14 @@
 			<a href="contact.html">Contact Us</a>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93073005-2"></script>
 		<script charset="utf-8">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-93073005-2');
+			
 			$(document).ready(function() {
 					$('.overlay').hide();
 				$('.service').click(function(){
