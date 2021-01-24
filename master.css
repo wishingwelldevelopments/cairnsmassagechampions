@@ -53,12 +53,13 @@ body{
 .nav-container-item a{
 	margin-right:15px;
 	text-decoration:none;
+	padding-bottom:5px;
 	position:relative;
 	height:20px;
 	top:8px;
 	color:#2d2d2d;
 	letter-spacing:0.5px;
-	font-weight:400;
+	font-weight:700;
 	font-size:14px;
 }
 #osin a{
@@ -92,14 +93,13 @@ body{
 }
 #nav-active{
 	color:var(--primary);
-	border-bottom:1px solid var(--primary);
+	border-bottom:2px solid var(--primary);
 }
 .hero-section{
 	width:100%;
-	height:500px;
+	height:600px;
 	background-image:url('back2.jpg');
 	background-size:cover;
-	top:100px;
 	background-position:center;
 	position:relative;
 }
@@ -129,15 +129,18 @@ body{
 }
 .hero-container p{
 	color:white;
+	width:600px;
+	line-height:35px;
 	margin-top:10px;
 	font-weight:400;
-	font-size:23px;
+	font-size:20px;
 }
 .hero-btns a{
 	color:var(--primary);
 	padding:10px 30px;
 	box-sizing:border-box;
 	border-radius:3px;
+	margin-right:5px;
 	text-decoration:none;
 	font-weight:400;
 	background-color:white;
@@ -151,13 +154,13 @@ body{
 .services{
 	width:100%;
 	background-color:#0f1213;
-	padding-top:100px;
+	padding:100px 0px;
 }
 .services-container{
 	width:1300px;
 	margin:0px auto;
 	display:grid;
-	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-columns:1fr 1fr 1fr;
 	position:relative;
 	border-radius:4px;
 	padding:30px;
@@ -165,7 +168,6 @@ body{
 	grid-gap:30px;
 }
 .service{
-	//border:2px solid #f1f1f1;
 	box-sizing:border-box;
 	padding:30px;
 	background-color:#161d1f;
@@ -193,7 +195,7 @@ body{
 	margin-bottom:15px;
 }
 .service h1{
-	color:#dadada;
+	color:white;
 	transition:color 0.4s;
 }
 .service p{
@@ -216,8 +218,8 @@ body{
 }
 .quote-section{
 	width:100%;
-	height:500px;
-	background-color:#f7f7f7;
+	height:600px;
+	background-color:white;
 	display:grid;
 	grid-template-columns:1fr 1fr;
 }
@@ -241,6 +243,7 @@ body{
 	flex-direction:column;
 	padding:50px;
 	box-sizing:border-box;
+	background-color:white;
 }
 .quote-item p{
 	color:#737373;
@@ -250,6 +253,10 @@ body{
 }
 .quote-item h1{
 	color:#0f1213;
+}
+.quote-item h4{
+	color:var(--primary);
+	margin-bottom:15px;
 }
 #sbtn{
 	color:var(--primary);
@@ -268,7 +275,7 @@ body{
 	background-color:var(--primary);
 	color:#4a4a4a;
 	padding-left:30px;
-} 
+}
 #abtn{
 	background-color:#c1c1c1;
 	color:#4a4a4a;
@@ -348,7 +355,10 @@ body{
 .insurance{
 	width:100%;
 	background-color:white;
-	padding-top:50px;
+	padding:50px 0px;
+}
+.insurance h3{
+	text-align:center;
 }
 .ins-container{
 	width:1300px;
@@ -361,14 +371,13 @@ body{
 	grid-gap:10px;
 	padding:10px;
 	box-sizing:border-box;
-	border-bottom:2px solid #ececec;
 }
 .insurance img{
 	width:100%;
 	height:auto;
 }
 .specials{
-	background-color:white;
+	background-color:#0f1213;
 	width:100%;
 	height:300px;
 	position:relative;
@@ -384,12 +393,12 @@ body{
 	color:var(--primary);
 }
 .specials p{
-	color:#5a5a5a;
+	color:white;
 	width:500px;
 }
 .footer{
 	width:100%;
-	background-color:#0f1213;
+	background-color:#f9f9f9;
 	padding-top:30px;
 }
 .footer .review-container{
@@ -404,8 +413,7 @@ body{
 .footer .review{
 	display:flex;
 	justify-content:center;
-	border-right:1px solid #223a3a;
-	padding:20px;
+	padding:50px;
 	box-sizing:border-box;
 	align-items:center;
 	text-align:center;
@@ -414,16 +422,15 @@ body{
 .footer img{
 	margin-bottom:20px;
 	border-radius:360px;
-	border:3px solid #212a2b;
 	width:70px;
 }
 .footer h1{
-	color:#ffffff;
+	color:black;
 	margin-bottom:20px;
 	font-size:18px;
 }
 .footer p{
-	color:#c5c5c5;
+	color:#484848;
 	line-height:27px;
 }
 .content-window{
@@ -436,14 +443,14 @@ body{
 	box-sizing:border-box;
 }
 .content-window p{
-	font-size:17px;	
+	font-size:17px;
 	margin-bottom:20px;
 	color:#4a4a4a;
 	line-height:27px;
 }
 .rec{
 	width:100%;
-	background-color:#0f1213;
+	background-color:#1a1f21;
 	padding:10px;
 	box-sizing:border-box;
 	text-align:center;
@@ -469,6 +476,9 @@ body{
 		width:100%;
 		grid-template-columns:1fr 1fr;
 	}
+	#expandservice{
+		grid-column:span 2;
+	}
 	.ins-container{
 		width:500px;
 		height:auto;
@@ -477,9 +487,6 @@ body{
 	.review-container{
 		width:100% !important;
 		grid-template-columns:1fr 1fr !important;
-	}
-	.review{
-		border-right:0px !important;
 	}
 }
 @media only screen and (max-width: 976px) {
@@ -505,6 +512,9 @@ body{
 	.services-container{
 		grid-template-columns:1fr;
 	}
+	#expandservice{
+		grid-column:span 1;
+	}
 	.quote-item-image{
 		display:none;
 	}
@@ -525,6 +535,7 @@ body{
 	}
 	.hero-container p{
 		font-size:20px;
+		width:80%;
 	}
 	.ins-container{
 		width:300px;
@@ -543,9 +554,6 @@ body{
 	.nav-top{
 		display:none;
 	}
-	.hero-section{
-		top:70px;
-	}
 	.overlay{
 		top:70px;
 	}
@@ -556,6 +564,9 @@ body{
 	}
 	#osin{
 		text-align:center;
+	}
+	#mob-hidden{
+		display:none;
 	}
 }
 .icns, .icns a{
