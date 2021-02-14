@@ -13,7 +13,6 @@ body{
 .content img{
 	width:200px;
 	margin-bottom:20px;
-	margin-top:75px;
 	border-radius:4px;
 }
 #hamenu{
@@ -49,12 +48,13 @@ body{
 }
 .namecontainer{
 	position:relative;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	margin-left:20px;
 }
 #slogan{
-	position:absolute;
-	bottom:0px;
-	font-size:10px;
-	left:20px;
+	font-size:12px;
 }
 .nav-container{
 	width:1300px;
@@ -103,21 +103,14 @@ body{
 	font-size:16px;
 	font-weight:400;
 	color:#2d2d2d;
-	margin-left:20px;
-	position:relative;
 }
 #nav-active{
 	color:var(--primary);
 	border-bottom:2px solid var(--primary);
 }
-#slogan{
-        position:absolute;
-        bottom:0px;
-        font-size:10px;
-        left:20px;
-}
 .content h1{
-	color:white;
+        color:#012c61;
+	font-size:20px;
 	margin-bottom:20px;
 }
 .content p{
@@ -168,10 +161,6 @@ body{
 	#osin{
 		text-align:center;
 	}
-}
-.concontainer{
-	border-top:2px solid #4aadaa;
-	margin-top:50px;
 }
 .overlay{
 	width:100%;
@@ -237,4 +226,15 @@ body{
 	color:white;
 	line-height:28px;
 	margin-bottom:10px;
+}
+.group{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:30px;
+}
+.group-child{
+    border:1px solid #085a58;
+    padding:30px;
+    border-radius:8px;
 }
